@@ -20,7 +20,7 @@ notes.get('/:note_id', (req, res) => {
         const result = json.filter((note) => note.note_id === noteID);
         return result.length > 0
           ? res.json(result)
-          : res.json('No tip with that ID');
+          : res.json('No note with that ID');
     });
 });
 
